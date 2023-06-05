@@ -13,15 +13,18 @@ const emit = defineEmits(['prev', 'next'])
   border: none;
   --display: inline-block;
   position: absolute;
-  top: calc(50% - 25px);
-  height: 50px;
-  width: 70px;
+  top: calc(50% - 2.5rem);
+  height: 5rem;
+  width: 7rem;
   cursor: pointer;
+  font-size: 1.4rem;
 }
 .left {
   left: 0%;
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 .right {
   right: 0%;
+  border-radius: 0.3rem 0 0 0.3rem;
 }
 </style>

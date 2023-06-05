@@ -4,12 +4,15 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+  font-size: 62.5%;
 }
 
 #app {
-  --max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
 
   font-weight: normal;
+}
+body {
+  font-size: 1.6rem;
 }
