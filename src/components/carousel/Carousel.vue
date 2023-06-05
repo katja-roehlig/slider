@@ -3,7 +3,6 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import CarouselItem from './CarouselItem.vue'
 
 const props = defineProps({ slides: Object })
-console.log(props.slides)
 let currentSlide = ref(0)
 let slideInterval = ref(null)
 
@@ -17,9 +16,8 @@ onMounted(() => {
       index = 0
     } */
     setCurrentSlide(index)
-  }, 3000)
+  }, 5000)
 })
-console.log(slideInterval)
 
 onBeforeUnmount(() => {
   clearInterval(slideInterval)
